@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		75A61A2C238E4D2700A56EBC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 75A61A2B238E4D2700A56EBC /* main.m */; };
+		75A61A37238E4DCE00A56EBC /* ServiceListener.m in Sources */ = {isa = PBXBuildFile; fileRef = 75A61A36238E4DCE00A56EBC /* ServiceListener.m */; };
+		75A61A40238E599900A56EBC /* GCDAsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 75A61A3D238E599900A56EBC /* GCDAsyncSocket.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +27,11 @@
 /* Begin PBXFileReference section */
 		75A61A28238E4D2700A56EBC /* ScoketDemo */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ScoketDemo; sourceTree = BUILT_PRODUCTS_DIR; };
 		75A61A2B238E4D2700A56EBC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		75A61A35238E4DCE00A56EBC /* ServiceListener.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ServiceListener.h; sourceTree = "<group>"; };
+		75A61A36238E4DCE00A56EBC /* ServiceListener.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ServiceListener.m; sourceTree = "<group>"; };
+		75A61A3D238E599900A56EBC /* GCDAsyncSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDAsyncSocket.m; sourceTree = "<group>"; };
+		75A61A3E238E599900A56EBC /* Documentation.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = Documentation.html; sourceTree = "<group>"; };
+		75A61A3F238E599900A56EBC /* GCDAsyncSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDAsyncSocket.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,9 +64,22 @@
 		75A61A2A238E4D2700A56EBC /* ScoketDemo */ = {
 			isa = PBXGroup;
 			children = (
+				75A61A3C238E598800A56EBC /* GCDAsyncSocket */,
 				75A61A2B238E4D2700A56EBC /* main.m */,
+				75A61A35238E4DCE00A56EBC /* ServiceListener.h */,
+				75A61A36238E4DCE00A56EBC /* ServiceListener.m */,
 			);
 			path = ScoketDemo;
+			sourceTree = "<group>";
+		};
+		75A61A3C238E598800A56EBC /* GCDAsyncSocket */ = {
+			isa = PBXGroup;
+			children = (
+				75A61A3E238E599900A56EBC /* Documentation.html */,
+				75A61A3F238E599900A56EBC /* GCDAsyncSocket.h */,
+				75A61A3D238E599900A56EBC /* GCDAsyncSocket.m */,
+			);
+			path = GCDAsyncSocket;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -119,7 +139,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				75A61A40238E599900A56EBC /* GCDAsyncSocket.m in Sources */,
 				75A61A2C238E4D2700A56EBC /* main.m in Sources */,
+				75A61A37238E4DCE00A56EBC /* ServiceListener.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -238,6 +260,7 @@
 		75A61A30238E4D2700A56EBC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CZD89388LH;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -248,6 +271,7 @@
 		75A61A31238E4D2700A56EBC /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CZD89388LH;
 				ENABLE_HARDENED_RUNTIME = YES;

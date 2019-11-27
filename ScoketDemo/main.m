@@ -7,11 +7,17 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "ServiceListener.h"
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
-        // insert code here...
-        NSLog(@"Hello, World!");
+        NSLog(@"socket listen begin-------!");
+        
+        ServiceListener *service = [[ServiceListener alloc] init];
+        [service start];
+        [[NSRunLoop mainRunLoop] run];
+        
+        NSLog(@"socket listen end-------!");
     }
     return 0;
 }
